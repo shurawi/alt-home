@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1440px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  color: #333333;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -10,4 +21,104 @@
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.container {
+  width: 1380px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.page {
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f2f8fb;
+}
+
+.page__content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #f2f8fb;
+}
+
+.page__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #06a9b3;
+}
+
+.button {
+  display: inline-block;
+  padding: 16px 32px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #06a9b3;
+  text-decoration: none;
+  border: none;
+}
+
+.page__content h1 {
+  margin: 0;
+  font-size: 44px;
+  line-height: 62px;
+  color: #333333;
+}
+
+.title {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 115px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #06a9a3;
+}
+
+.title::before {
+  counter-increment: section-counter;     /* Инкрементирует счетчик*/
+  content: "0" counter(section-counter);  /* Отображает текущее значение счетчика */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #06a9b3;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 81px;
+  height: 1px;
+  left: 25px;
+  top: 9px;
+  border-top: 1px solid #06a9b3;
+}
+
+.headline {
+  margin: 60px 0 25px 0;
+  font-size: 32px;
+  line-height: 48px;
 }

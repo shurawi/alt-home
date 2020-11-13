@@ -8,8 +8,8 @@
     <title>Alt-home</title>
   </head>
   <body class="page">
-   <header class="page__header header">
-     <nav class="header__nav">
+   <header class="header">
+     <nav class="header__nav container">
        <ul class="header__list">
          <li class="header__item">
            <a class="header__link page__link" href="#">Место</a>
@@ -21,17 +21,23 @@
            <a class="header__link page__link" href="#">Оставить заявку</a>
          </li>
        </ul>
-       <a class="header__logo" href="#">
-         <img class="header__img" src="img/header_logo.svg" width="97" height="30" alt="Логотип компании Alt Home">
-       </a>
-       <a class="header__search" href="#">
-         <span class="header__span visually-hidden">Поиск</span>
-       </a>
-       <a class="page__link" href="#">Вход</a> или <a class="page__link" href="#">регистрация</a>
+       <div class="header__container--logo">
+         <a class="header__logo" href="#">
+           <img class="header__img" src="img/header_logo.svg" width="97" height="30" alt="Логотип компании Alt Home">
+         </a>
+       </div>
+       <div class="header__container--search">
+         <a class="header__search" href="#">
+           <span class="header__span visually-hidden">Поиск</span>
+         </a>
+       </div>
+       <div class="header__user">
+         <a class="page__link" href="#">Вход</a> или <a class="page__link" href="#">регистрация</a>
+       </div>
      </nav>
    </header>
    <main class="page__content">
-     <section class="welcome">
+     <section class="welcome container">
        <h1>Загородные дома в аренду</h1>
        <p class="welcome__city">Санкт-Петербург</p>
        <p class="welcome__text">Отдохните от суеты мегаполиса в уютном тёплом доме в окружении экологически чистых лесов, рек и озёр</p>
@@ -60,10 +66,10 @@
        <button class="welcome__slider welcome__slider--next" type="button"><span class="visually-hidden">Вперёд</span></button>
        <p class="welcome__page"><span>1</span>/<span>8</span></p>
      </section>
-     <article class="promo">
+     <article class="promo container">
        <header class="promo__header">
-         <h2 class="promo__title">Место</h2>
-         <h3 class="promo__headline">Парк отдыха на берегу Ладожского озера</h3>
+         <h2 class="promo__title title">Место</h2>
+         <h3 class="promo__headline headline">Парк отдыха на берегу Ладожского озера</h3>
        </header>
        <p class="promo__text">Отдохните в уютных деревянных домах с камином, сауной и джакузи, расположенных на берегу озера. Для
          любителей полного уединения есть домики и в глубине парка, в окружении вековых деревьев.</p>
@@ -80,80 +86,82 @@
          <a class="button" href="#">Бесплатно забронировать</a>
      </article>
      <section class="catalog">
-       <header class="catalog__header">
-         <h2 class="catalog__title">Каталог</h2>
-         <h3 class="catalog__headline">Дома для аренды</h3>
-       </header>
-       <div class="catalog__item">
-         <img class="catalog__pic" src="img/catalog_pic1.jpg" width="327" height="220" alt="Современная классика">
-         <h3>Современная классика</h3>
-         <p>Площадь — 186 м<sup>2</sup></p>
-         <dl>
-           <dt>комнат</dt>
-           <dd>5</dd>
-           <dt>спальни</dt>
-           <dd>3</dd>
-           <dt>этажа</dt>
-           <dd>2</dd>
-         </dl>
-       </div>
-       <div class="catalog__item">
-         <img class="catalog__pic" src="img/catalog_pic2.jpg" width="327" height="220" alt="Дом на берегу озера">
-         <h3>Дом на берегу озера</h3>
-         <p>Площадь — 242 м<sup>2</sup></p>
-         <dl>
-           <dt>комнат</dt>
-           <dd>7</dd>
-           <dt>спальни</dt>
-           <dd>4</dd>
-           <dt>этажа</dt>
-           <dd>2</dd>
-         </dl>
-       </div>
-       <div class="catalog__item">
-         <img class="catalog__pic" src="img/catalog_pic3.jpg" width="327" height="220" alt="Особняк в лесу">
-         <h3>Особняк в лесу</h3>
-         <p>Площадь — 406 м<sup>2</sup></p>
-         <dl>
-           <dt>комнат</dt>
-           <dd>12</dd>
-           <dt>спальни</dt>
-           <dd>8</dd>
-           <dt>этажа</dt>
-           <dd>2</dd>
-         </dl>
-       </div>
-       <div class="catalog__item">
-         <img class="catalog__pic" src="img/catalog_pic4.jpg" width="327" height="220" alt="Домик на дереве">
-         <h3>Домик на дереве</h3>
-         <p>Площадь — 75 м<sup>2</sup></p>
-         <dl>
-           <dt>комнаты</dt>
-           <dd>3</dd>
-           <dt>спальни</dt>
-           <dd>2</dd>
-           <dt>этаж</dt>
-           <dd>1</dd>
-         </dl>
-       </div>
-       <div class="catalog__item catalog__item--horizontal">
-         <img class="catalog__pic" src="himg/catalog_pic5.jpg" width="327" height="178" alt="Лесной дом у пруда">
-         <h3>Лесной дом у пруда</h3>
-         <p>Площадь — 81 м<sup>2</sup></p>
-         <dl>
-           <dt>комнаты</dt>
-           <dd>3</dd>
-           <dt>спальни</dt>
-           <dd>2</dd>
-           <dt>этаж</dt>
-           <dd>1</dd>
-         </dl>
+       <div class="container">
+         <header class="catalog__header">
+           <h2 class="catalog__title title">Каталог</h2>
+           <h3 class="catalog__headline headline">Дома для аренды</h3>
+         </header>
+         <div class="catalog__item">
+           <img class="catalog__pic" src="img/catalog_pic1.jpg" width="327" height="220" alt="Современная классика">
+           <h3>Современная классика</h3>
+           <p>Площадь — 186 м<sup>2</sup></p>
+           <dl>
+             <dt>комнат</dt>
+             <dd>5</dd>
+             <dt>спальни</dt>
+             <dd>3</dd>
+             <dt>этажа</dt>
+             <dd>2</dd>
+           </dl>
+         </div>
+         <div class="catalog__item">
+           <img class="catalog__pic" src="img/catalog_pic2.jpg" width="327" height="220" alt="Дом на берегу озера">
+           <h3>Дом на берегу озера</h3>
+           <p>Площадь — 242 м<sup>2</sup></p>
+           <dl>
+             <dt>комнат</dt>
+             <dd>7</dd>
+             <dt>спальни</dt>
+             <dd>4</dd>
+             <dt>этажа</dt>
+             <dd>2</dd>
+           </dl>
+         </div>
+         <div class="catalog__item">
+           <img class="catalog__pic" src="img/catalog_pic3.jpg" width="327" height="220" alt="Особняк в лесу">
+           <h3>Особняк в лесу</h3>
+           <p>Площадь — 406 м<sup>2</sup></p>
+           <dl>
+             <dt>комнат</dt>
+             <dd>12</dd>
+             <dt>спальни</dt>
+             <dd>8</dd>
+             <dt>этажа</dt>
+             <dd>2</dd>
+           </dl>
+         </div>
+         <div class="catalog__item">
+           <img class="catalog__pic" src="img/catalog_pic4.jpg" width="327" height="220" alt="Домик на дереве">
+           <h3>Домик на дереве</h3>
+           <p>Площадь — 75 м<sup>2</sup></p>
+           <dl>
+             <dt>комнаты</dt>
+             <dd>3</dd>
+             <dt>спальни</dt>
+             <dd>2</dd>
+             <dt>этаж</dt>
+             <dd>1</dd>
+           </dl>
+         </div>
+         <div class="catalog__item catalog__item--horizontal">
+           <img class="catalog__pic" src="himg/catalog_pic5.jpg" width="327" height="178" alt="Лесной дом у пруда">
+           <h3>Лесной дом у пруда</h3>
+           <p>Площадь — 81 м<sup>2</sup></p>
+           <dl>
+             <dt>комнаты</dt>
+             <dd>3</dd>
+             <dt>спальни</dt>
+             <dd>2</dd>
+             <dt>этаж</dt>
+             <dd>1</dd>
+           </dl>
+         </div>
        </div>
      </section>
-     <section class="feedback">
+     <section class="feedback container">
        <header class="feedback__header">
-         <h2 class="feedback__title">Оставить заявку</h2>
-         <h3 class="feedback__header">Мы свяжемся с вами</h3>
+         <h2 class="feedback__title title">Оставить заявку</h2>
+         <h3 class="feedback__headline headline">Мы свяжемся с вами</h3>
        </header>
        <form class="feedback__form" method="get" action="#">
          <label class="feedback__label" for="titles">Обращение</label>
@@ -179,7 +187,7 @@
        <img class="feedback__img" src="img/feedback_pic.jpg" width="708" height="737" alt="Лодка на озере">
      </section>
    </main>
-   <footer class="footer">
+   <footer class="footer container">
      <a class="footer__logo" href="#">
        <img src="img/footer_logo.svg" width="97" height="30" alt="Логотип компании Alt Home">
      </a>
