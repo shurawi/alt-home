@@ -3,11 +3,198 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <title>Alt-home</title>
   </head>
-  <body class="page container">
-
-  </body>
+  <body class="page">
+   <header class="page__header header">
+     <nav class="header__nav">
+       <ul class="header__list">
+         <li class="header__item">
+           <a class="header__link page__link" href="#">Место</a>
+         </li>
+         <li class="header__item">
+           <a class="header__link page__link" href="#">Каталог</a>
+         </li>
+         <li class="header__item">
+           <a class="header__link page__link" href="#">Оставить заявку</a>
+         </li>
+       </ul>
+       <a class="header__logo" href="#">
+         <img class="header__img" src="img/header_logo.svg" width="97" height="30" alt="Логотип компании Alt Home">
+       </a>
+       <a class="header__search" href="#">
+         <span class="header__span visually-hidden">Поиск</span>
+       </a>
+       <a class="page__link" href="#">Вход</a> или <a class="page__link" href="#">регистрация</a>
+     </nav>
+   </header>
+   <main class="page__content">
+     <section class="welcome">
+       <h1>Загородные дома в аренду</h1>
+       <p class="welcome__city">Санкт-Петербург</p>
+       <p class="welcome__text">Отдохните от суеты мегаполиса в уютном тёплом доме в окружении экологически чистых лесов, рек и озёр</p>
+       <a class="button" href="#">Арендовать дом</a>
+       <ul class="welcome__list">
+         <li class="welcome__item">
+           <a class="welcome__link welcome__link--facebook" href="#">
+             <span class="visually-hidden">Facebook</span>
+           </a>
+         </li>
+         <li class="welcome__item">
+           <a class="welcome__link welcome__link--instagram" href="#">
+             <span class="visually-hidden">Instagram</span>
+           </a>
+         </li>
+         <li class="welcome__item">
+           <a class="welcome__link welcome__link--vk" href="#">
+             <span class="visually-hidden">VK</span>
+           </a>
+         </li>
+       </ul>
+       <div class="welcome__pic">
+         <img class="welcome__img" src="img/welcome_house.jpg" alt="Загородный дом" width="795" height="496">
+       </div>
+       <button class="welcome__slider welcome__slider--prev" type="button"><span class="visually-hidden">Назад</span></button>
+       <button class="welcome__slider welcome__slider--next" type="button"><span class="visually-hidden">Вперёд</span></button>
+       <p class="welcome__page"><span>1</span>/<span>8</span></p>
+     </section>
+     <article class="promo">
+       <header class="promo__header">
+         <h2 class="promo__title">Место</h2>
+         <h3 class="promo__headline">Парк отдыха на берегу Ладожского озера</h3>
+       </header>
+       <p class="promo__text">Отдохните в уютных деревянных домах с камином, сауной и джакузи, расположенных на берегу озера. Для
+         любителей полного уединения есть домики и в глубине парка, в окружении вековых деревьев.</p>
+       <img src="img/promo_pic1.jpg" width="444" height="280" alt="Домик в лесу">
+       <p class="promo__text promo__aside-right">За счёт особой конструкции в наших домах очень тепло зимой и прохладно летом. Мы открыты для вас в любое время года!</p>
+       <p class="promo__text">На территории парка есть баскетбольная площадка, собственный пляж с сеткой для волейбола, прокат горных велосипедов и лодок. А зимой у нас можно взять в прокат лыжи или снегоходы и кататься по специально оборудованным трассам. Для каждого посетителя составляем индивидуальную программу развлечений и помогаем её осуществить.</p>
+       <img src="img/promo_pic2.jpg" width="1146" height="280" alt="Мужчины играют в пляжный волейбол" class="big-pic">
+       <p class="promo__text">Около каждого коттеджа есть детская площадка с качелями и горками, а на территории парка работает детская комната. Вы сможете позволить себе любой отдых зная, что ваш ребёнок находится под присмотром опытных специалистов.</p>
+       <blockquote>Мы предлагаем не только уютные дома, большой выбор развлечений и активностей для вас и вашей семьи, но и масштабные праздники, спортивные турниры и возможность встретить новых друзей.</blockquote>
+       <p class="promo__text">Несмотря на отдалённость от населённых пунктов, вы не будете чувствовать себя оторванными от цивилизации. Все наши дома оборудованы высокоскоростными точками доступа Wi-Fi и домашними кинотеатрами с подпиской Netflix.</p>
+       <p class="promo__text promo__aside-left">Вы можете подписаться на рассылку и узнавать обо всех акциях, скидках, и
+         выгодных предложениях.</p>
+       <p class="promo__text">Приезжайте к нам на месяц, всё лето или зиму — на длительную аренду действуют хорошие скидки! Забронируйте дом прямо сейчас, для этого достаточно заказать звонок, а отменить бронь вы сможете в любое время совершенно бесплатно.</p>
+         <a class="button" href="#">Бесплатно забронировать</a>
+     </article>
+     <section class="catalog">
+       <header class="catalog__header">
+         <h2 class="catalog__title">Каталог</h2>
+         <h3 class="catalog__headline">Дома для аренды</h3>
+       </header>
+       <div class="catalog__item">
+         <img class="catalog__pic" src="img/catalog_pic1.jpg" width="327" height="220" alt="Современная классика">
+         <h3>Современная классика</h3>
+         <p>Площадь — 186 м<sup>2</sup></p>
+         <dl>
+           <dt>комнат</dt>
+           <dd>5</dd>
+           <dt>спальни</dt>
+           <dd>3</dd>
+           <dt>этажа</dt>
+           <dd>2</dd>
+         </dl>
+       </div>
+       <div class="catalog__item">
+         <img class="catalog__pic" src="img/catalog_pic2.jpg" width="327" height="220" alt="Дом на берегу озера">
+         <h3>Дом на берегу озера</h3>
+         <p>Площадь — 242 м<sup>2</sup></p>
+         <dl>
+           <dt>комнат</dt>
+           <dd>7</dd>
+           <dt>спальни</dt>
+           <dd>4</dd>
+           <dt>этажа</dt>
+           <dd>2</dd>
+         </dl>
+       </div>
+       <div class="catalog__item">
+         <img class="catalog__pic" src="img/catalog_pic3.jpg" width="327" height="220" alt="Особняк в лесу">
+         <h3>Особняк в лесу</h3>
+         <p>Площадь — 406 м<sup>2</sup></p>
+         <dl>
+           <dt>комнат</dt>
+           <dd>12</dd>
+           <dt>спальни</dt>
+           <dd>8</dd>
+           <dt>этажа</dt>
+           <dd>2</dd>
+         </dl>
+       </div>
+       <div class="catalog__item">
+         <img class="catalog__pic" src="img/catalog_pic4.jpg" width="327" height="220" alt="Домик на дереве">
+         <h3>Домик на дереве</h3>
+         <p>Площадь — 75 м<sup>2</sup></p>
+         <dl>
+           <dt>комнаты</dt>
+           <dd>3</dd>
+           <dt>спальни</dt>
+           <dd>2</dd>
+           <dt>этаж</dt>
+           <dd>1</dd>
+         </dl>
+       </div>
+       <div class="catalog__item catalog__item--horizontal">
+         <img class="catalog__pic" src="himg/catalog_pic5.jpg" width="327" height="178" alt="Лесной дом у пруда">
+         <h3>Лесной дом у пруда</h3>
+         <p>Площадь — 81 м<sup>2</sup></p>
+         <dl>
+           <dt>комнаты</dt>
+           <dd>3</dd>
+           <dt>спальни</dt>
+           <dd>2</dd>
+           <dt>этаж</dt>
+           <dd>1</dd>
+         </dl>
+       </div>
+     </section>
+     <section class="feedback">
+       <header class="feedback__header">
+         <h2 class="feedback__title">Оставить заявку</h2>
+         <h3 class="feedback__header">Мы свяжемся с вами</h3>
+       </header>
+       <form class="feedback__form" method="get" action="#">
+         <label class="feedback__label" for="titles">Обращение</label>
+         <select class="feedback__field" name="titles" id="titles">
+           <option value="Mrs">Мистер</option>
+           <option value="Mr">Миссис</option>
+           <option value="Ms">Мисс</option>
+         </select>
+         <label class="feedback__label" for="first-name">Имя</label>
+         <input class="feedback__field" type="text" name="first-name" id="first-name">
+         <label class="feedback__label" for="last-name">Фамилия</label>
+         <input class="feedback__field" type="text" name="last-name" id="last-name">
+         <label class="feedback__label" for="email">E-mail</label>
+         <input class="feedback__field" type="email" name="email" id="email">
+         <label class="feedback__label" for="tel">Телефон</label>
+         <input class="feedback__field" type="tel" name="tel" id="tel">
+         <input class="visually-hidden" type="checkbox" name="agreement" id="agreement">
+         <label class="feedback__label" for="agreement" class="text-label">Согласие на обработку персональных данных</label>
+         <input class="visually-hidden" type="checkbox" name="subscribe" id="subscribe" checked>
+         <label class="feedback__label" for="subscribe" class="text-label">Подписка на рассылку</label>
+         <button class="button" type="submit">Отправить</button>
+       </form>
+       <img class="feedback__img" src="img/feedback_pic.jpg" width="708" height="737" alt="Лодка на озере">
+     </section>
+   </main>
+   <footer class="footer">
+     <a class="footer__logo" href="#">
+       <img src="img/footer_logo.svg" width="97" height="30" alt="Логотип компании Alt Home">
+     </a>
+     <ul class="footer__list">
+       <li class="footer__item">
+         <a class="footer__link page__link" href="#">Место</a>
+       </li>
+       <li class="footer__item">
+         <a class="footer__link page__link" href="#">Каталог</a>
+       </li>
+       <li class="footer__item">
+         <a class="footer__link page__link" href="#">Оставить заявку</a>
+       </li>
+     </ul>
+     <p class="footer__copyright">© Сделано в <a class="page__link" href="htmlacademy.ru">HTML Academy</a></p>
+   </footer>
+ </body>
 </html>
