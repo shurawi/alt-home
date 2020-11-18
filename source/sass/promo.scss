@@ -1,0 +1,91 @@
+.promo {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  margin-top: 100px;
+  margin-bottom: 95px;
+}
+
+.promo::before {
+  content: "01";
+  position: absolute;
+  left: 145px;
+  top: 0;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 65px;
+  color: #eaf2f6;
+}
+
+.promo::after {
+  content: "Место";
+  position: absolute;
+  left: 145px;
+  top: 60px;
+  font-weight: 900;
+  font-size: 65px;
+  line-height: 65px;
+  color: #eaf2f6;
+  writing-mode: vertical-lr;
+  transform: scale(-1, -1) translateY(-40px);
+}
+
+.promo__header {
+  grid-column: 5 / 9;
+}
+
+.promo__content {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+}
+
+.promo__content > * {
+  grid-column: 5 / 9;
+}
+
+.promo__text {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.promo__img {
+  margin: 0 0 25px 0;
+}
+
+.promo__img--big {
+  grid-column: 2 / -2;
+}
+
+.promo__blockquote {
+  grid-column: 4 / 10;
+  margin: 0 0 35px 0;
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  border-left: 1px solid #06a9b3;
+}
+
+.promo__btn {
+  grid-column: 5 / 8;
+  margin-top: 10px;
+}
+
+.promo__text--right {
+  grid-column: -4 / -2;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.promo__text--left {
+  grid-column: 2 / 4;
+  margin-top: 20px;
+
+  font-size: 14px;
+  line-height: 24px;
+}
