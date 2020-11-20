@@ -185,25 +185,41 @@
          <h3 class="feedback__headline headline">Мы свяжемся с вами</h3>
        </header>
        <form class="feedback__form" method="get" action="#">
-         <label class="feedback__label" for="titles">Обращение</label>
-         <select class="feedback__field" name="titles" id="titles">
-           <option value="Mrs">Мистер</option>
-           <option value="Mr">Миссис</option>
-           <option value="Ms">Мисс</option>
-         </select>
-         <label class="feedback__label" for="first-name">Имя</label>
-         <input class="feedback__field" type="text" name="first-name" id="first-name">
-         <label class="feedback__label" for="last-name">Фамилия</label>
-         <input class="feedback__field" type="text" name="last-name" id="last-name">
-         <label class="feedback__label" for="email">E-mail</label>
-         <input class="feedback__field" type="email" name="email" id="email">
-         <label class="feedback__label" for="tel">Телефон</label>
-         <input class="feedback__field" type="tel" name="tel" id="tel">
-         <input class="visually-hidden" type="checkbox" name="agreement" id="agreement">
-         <label class="feedback__label" for="agreement" class="text-label">Согласие на обработку персональных данных</label>
-         <input class="visually-hidden" type="checkbox" name="subscribe" id="subscribe" checked>
-         <label class="feedback__label" for="subscribe" class="text-label">Подписка на рассылку</label>
-         <button class="button" type="submit">Отправить</button>
+         <div class="feedback__tit">
+           <label class="feedback__label" for="titles">Обращение</label>
+           <select class="feedback__field" name="titles" id="titles">
+             <option value="Mrs">Мистер</option>
+             <option value="Mr">Миссис</option>
+             <option value="Ms">Мисс</option>
+           </select>
+         </div>
+         <div class="feedback__name">
+           <label class="feedback__label" for="first-name">Имя</label>
+           <input class="feedback__field" type="text" name="first-name" id="first-name">
+         </div>
+         <div class="feedback__surname">
+           <label class="feedback__label" for="last-name">Фамилия</label>
+           <input class="feedback__field" type="text" name="last-name" id="last-name">
+         </div>
+         <div class="feedback__email">
+           <label class="feedback__label" for="email">E-mail</label>
+           <input class="feedback__field" type="email" name="email" id="email">
+         </div>
+         <div class="feedback__phone">
+           <label class="feedback__label" for="tel">Телефон</label>
+           <input class="feedback__field" type="tel" name="tel" id="tel">
+         </div>
+         <div class="feedback__checkbox feedback__checkbox--agreement">
+           <input class="visually-hidden feedback__input--checkbox" type="checkbox" name="agreement" id="agreement">
+           <label class="feedback__label feedback__label--checkbox" for="agreement" class="text-label">Согласие на обработку персональных данных</label>
+         </div>
+         <div class="feedback__checkbox feedback__checkbox--subscribe">
+           <input class="visually-hidden feedback__input--checkbox" type="checkbox" name="subscribe" id="subscribe" checked>
+           <label class="feedback__label feedback__label--checkbox" for="subscribe" class="text-label">Подписка на рассылку</label>
+         </div>
+         <div class="feedback__btn">
+           <button class="button" type="submit">Отправить</button>
+         </div>
        </form>
        <img class="feedback__img" src="img/feedback_pic.jpg" width="708" height="737" alt="Лодка на озере">
      </section>
