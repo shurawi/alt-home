@@ -5,8 +5,8 @@
 }
 
 .feedback__header {
-  grid-column: 2 / span 4;
   margin-top: 100px;
+  grid-column: 2 / span 4;
 }
 
 .feedback__headline {
@@ -14,14 +14,15 @@
 }
 
 .feedback__img {
-  grid-column: 7 / -1;
-  grid-row: 1 / 3;
   width: 100%;
   height: 100%;
+  grid-column: 7 / -1;
+  grid-row: 1 / 3;
   object-fit: cover;
 }
 
 .feedback__form {
+  margin-bottom: 90px;
   grid-column: 2 / span 4;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -33,7 +34,6 @@
     "phone phone phone phone phone phone"
     "agreement agreement agreement subscribe subscribe subscribe"
     "submit submit submit . . .";
-  margin-bottom: 90px;
 }
 
 .feedback__tit {
@@ -57,13 +57,13 @@
 }
 
 .feedback__checkbox--agreement {
-  grid-area: agreement;
   margin-top: 25px;
+  grid-area: agreement;
 }
 
 .feedback__checkbox--subscribe {
-  grid-area: subscribe;
   margin-top: 15px;
+  grid-area: subscribe;
 }
 
 .feedback__btn {
@@ -96,8 +96,8 @@
 }
 
 .feedback__label--checkbox {
-  max-width: 180px;
   position: relative;
+  max-width: 180px;
   padding-left: 25px;
   display: inline-block;
   font-weight: 300;
@@ -106,21 +106,21 @@
 
   &::before {
     content: "";
-    width: 18px;
-    height: 18px;
     position: absolute;
-    border: 1px solid #cfdce3;
     left: 0;
     top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #cfdce3;
   }
 }
 
 .feedback__input--checkbox:checked + .feedback__label--checkbox::after {
   content: "";
-  width: 12px;
-  height: 12px;
   position: absolute;
-  background-color: #06a9b3;
   left: 4px;
   top: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #06a9b3;
 }

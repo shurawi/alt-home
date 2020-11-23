@@ -11,9 +11,8 @@
 }
 
 .welcome__city {
-  grid-area: 1 / 2 / 2 / 8;
   margin: 80px 0 10px 0;
-
+  grid-area: 1 / 2 / 2 / 8;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -26,9 +25,9 @@
 }
 
 .welcome__text {
+  margin: 10px 0 40px 0;
   grid-area: 3 / 2 / 4 / 8;
   z-index: 1;
-  margin: 10px 0 40px 0;
 
   font-weight: 400;
   font-size: 22px;
@@ -37,8 +36,8 @@
 }
 
 .welcome__button {
-  grid-area: 4 / 2 / 5 / 4;
   margin-bottom: 90px;
+  grid-area: 4 / 2 / 5 / 4;
 }
 
 .welcome__pic {
@@ -53,12 +52,10 @@
 }
 
 .welcome__list {
-  grid-area: 5 / 2 / 6 / 5;
-
   padding: 0;
   margin: 10px 0 0 0;
+  grid-area: 5 / 2 / 6 / 5;
   list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -73,9 +70,9 @@
 }
 
 .welcome__link {
-  display: block;
   width: 44px;
   height: 44px;
+  display: block;
 }
 
 .welcome__link--facebook {
@@ -98,7 +95,6 @@
 
 .welcome__controls {
   grid-area: 5 / 6 / 6 / -1;
-
   display: grid;
   grid-template-columns: auto auto 1fr;
 }
@@ -128,7 +124,6 @@
 .welcome__page {
   margin: 10px 30px 0 0;
   text-align: right;
-
   font-weight: normal;
   font-size: 32px;
   line-height: 48px;

@@ -15,11 +15,11 @@ body {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
   padding: 0;
   border: 0;
-  height: 1px;
-  width: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
 }
 
@@ -31,6 +31,7 @@ body {
 }
 
 .page {
+  min-height: 100vh;
   display: grid;
   grid-template-rows:
     auto
@@ -40,7 +41,6 @@ body {
     "header"
     "content"
     "footer";
-  min-height: 100vh;
 }
 
 .header {
@@ -66,8 +66,8 @@ body {
 }
 
 .button {
-  display: inline-block;
   padding: 16px 30px;
+  display: inline-block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -96,11 +96,11 @@ body {
 }
 
 .title::before {
-  counter-increment: section-counter;     /* Инкрементирует счетчик*/
-  content: "0" counter(section-counter);  /* Отображает текущее значение счетчика */
   position: absolute;
   left: 0;
   top: 0;
+  counter-increment: section-counter;     /* Инкрементирует счетчик*/
+  content: "0" counter(section-counter);  /* Отображает текущее значение счетчика */
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -110,10 +110,10 @@ body {
 .title::after {
   content: "";
   position: absolute;
-  width: 81px;
-  height: 1px;
   left: 25px;
   top: 9px;
+  width: 81px;
+  height: 1px;
   border-top: 1px solid #06a9b3;
 }
 

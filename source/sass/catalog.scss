@@ -11,7 +11,6 @@
 
 .catalog__item {
   grid-column: span 3;
-  border: 1px solid #c4c4c4;
   display: grid;
   grid-template-columns: 3fr;
   grid-template-rows:
@@ -19,6 +18,7 @@
     auto;
   grid-gap: 17px 24px;
   background-color: #ffffff;
+  border: 1px solid #c4c4c4;
 }
 
 .catalog__item--horizontal {
