@@ -79,24 +79,52 @@
   background-image: url("/img/fb_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("/img/fb-hover_icon.svg");
+  }
+
+  &:focus {
+    background-image: url("/img/fb-hover_icon.svg");
+    outline: none;
+  }
 }
 
 .welcome__link--instagram {
   background-image: url("/img/ins_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("/img/ins-hover_icon.svg");
+  }
+
+  &:focus {
+    background-image: url("/img/ins-hover_icon.svg");
+    outline: none;
+  }
 }
 
 .welcome__link--vk {
   background-image: url("/img/vk_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    background-image: url("/img/vk-hover_icon.svg");
+  }
+
+  &:focus {
+    background-image: url("/img/vk-hover_icon.svg");
+    outline: none;
+  }
 }
 
 .welcome__controls {
   grid-area: 5 / 6 / 6 / -1;
   display: grid;
   grid-template-columns: auto auto 1fr;
+  z-index: 1;
 }
 
 .welcome__btn {
@@ -105,6 +133,7 @@
   padding: 0;
   border: none;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .welcome__btn--left {
@@ -112,6 +141,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 16px;
+
+  &:hover {
+    background-image: url("/img/arw_left-hover_icon.svg");
+  }
+
+  &:focus {
+    background-image: url("/img/arw_left-hover_icon.svg");
+    outline: none;
+  }
 }
 
 .welcome__btn--right {
@@ -119,6 +157,15 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 16px;
+
+  &:hover {
+    background-image: url("/img/arw_right-hover_icon.svg");
+  }
+
+  &:focus {
+    background-image: url("/img/arw_right-hover_icon.svg");
+    outline: none;
+  }
 }
 
 .welcome__page {

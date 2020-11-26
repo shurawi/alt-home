@@ -11,6 +11,7 @@ body {
   font-size: 16px;
   line-height: 32px;
   color: #333333;
+  counter-reset: section-counter;
 }
 
 .visually-hidden {
@@ -63,6 +64,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #06a9b3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    outline: none;
+  }
 }
 
 .button {
@@ -76,6 +86,21 @@ body {
   background-color: #06a9b3;
   text-decoration: none;
   border: none;
+
+  &:hover {
+    padding: 15px 29px;
+    background: #ffffff;
+    color: #06a9b3;
+    border: 1px solid #06a9b3;
+  }
+
+  &:focus {
+    padding: 15px 29px;
+    background: #ffffff;
+    color: #06a9b3;
+    border: 1px solid #06a9b3;
+    outline: none;
+  }
 }
 
 .page__content h1 {
