@@ -1,5 +1,5 @@
 
-<img width="139" height="68" alt="Alt Home logo" src="https://github.com/shurawi/alt-home/blob/master/source/img/header_logo.png">
+<img width="97" height="30" alt="Alt Home logo" src="https://github.com/shurawi/alt-home/blob/master/source/img/header_logo.png">
 
 ## Alt-home
 
