@@ -28,3 +28,4 @@ npm i
 ```bush
 npm run start
 ```
+Данный макет входит в состав курса "Профессиональные навыки" раздела "Построение сеток на гридах по макету" [htmlacademy](https://htmlacademy.ru/skills)
