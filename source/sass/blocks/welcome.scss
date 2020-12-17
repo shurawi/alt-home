@@ -76,46 +76,46 @@
 }
 
 .welcome__link--facebook {
-  background-image: url("/img/fb_icon.svg");
+  background-image: url("../img/fb_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &:hover {
-    background-image: url("/img/fb-hover_icon.svg");
+    background-image: url("../img/fb-hover_icon.svg");
   }
 
   &:focus {
-    background-image: url("/img/fb-hover_icon.svg");
+    background-image: url("../img/fb-hover_icon.svg");
     outline: none;
   }
 }
 
 .welcome__link--instagram {
-  background-image: url("/img/ins_icon.svg");
+  background-image: url("../img/ins_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &:hover {
-    background-image: url("/img/ins-hover_icon.svg");
+    background-image: url("../img/ins-hover_icon.svg");
   }
 
   &:focus {
-    background-image: url("/img/ins-hover_icon.svg");
+    background-image: url("../img/ins-hover_icon.svg");
     outline: none;
   }
 }
 
 .welcome__link--vk {
-  background-image: url("/img/vk_icon.svg");
+  background-image: url("../img/vk_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 
   &:hover {
-    background-image: url("/img/vk-hover_icon.svg");
+    background-image: url("../img/vk-hover_icon.svg");
   }
 
   &:focus {
-    background-image: url("/img/vk-hover_icon.svg");
+    background-image: url("../img/vk-hover_icon.svg");
     outline: none;
   }
 }
@@ -137,33 +137,33 @@
 }
 
 .welcome__btn--left {
-  background-image: url("/img/arw_left_icon.svg");
+  background-image: url("../img/arw_left_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 16px;
 
   &:hover {
-    background-image: url("/img/arw_left-hover_icon.svg");
+    background-image: url("../img/arw_left-hover_icon.svg");
   }
 
   &:focus {
-    background-image: url("/img/arw_left-hover_icon.svg");
+    background-image: url("../img/arw_left-hover_icon.svg");
     outline: none;
   }
 }
 
 .welcome__btn--right {
-  background-image: url("/img/arw_right_icon.svg");
+  background-image: url("../img/arw_right_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 30px 16px;
 
   &:hover {
-    background-image: url("/img/arw_right-hover_icon.svg");
+    background-image: url("../img/arw_right-hover_icon.svg");
   }
 
   &:focus {
-    background-image: url("/img/arw_right-hover_icon.svg");
+    background-image: url("../img/arw_right-hover_icon.svg");
     outline: none;
   }
 }
